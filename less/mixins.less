@@ -4,6 +4,14 @@
   color: @shuttle-gray;
 }
 
+.transition() {
+  transition-duration: 0.4s;
+  cursor: pointer;
+  &:hover {
+    color: @btn-bg-color;
+    background-color: white;
+  }
+}
 .header-style() {
   color: @shuttle-gray;
   background-color: @wild-sand;
@@ -11,7 +19,7 @@
 }
 
 .bluebutton() {
-  background-color: #22283A;
+  background-color: @btn-bg-color;
   color: white;
   font-size: 1.5rem;
   border-radius: 7%;
