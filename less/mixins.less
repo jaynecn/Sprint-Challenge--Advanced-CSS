@@ -1,14 +1,19 @@
 // Mixins Here
 
+.font(){
+  color: @shuttle-gray;
+}
+
+.btn-color(){
+  background-color: @btn-bg-color;
+ }
 .layout(@justify, @align) {
-  display: flex;
   flex-direction: flex-start;
   justify-content: @justify;
   align-items: @align;
 }
 
-.column (@justify, @align) {
-  display: flex;
+.column(@justify, @align) {
   flex-direction: column;
   justify-content: @justify;
   align-items: @align;
