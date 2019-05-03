@@ -1,12 +1,27 @@
 // Mixins Here
 
-.font(){
+.font() {
   color: @shuttle-gray;
 }
 
-.btn-color(){
-  background-color: @btn-bg-color;
- }
+.header-style() {
+  color: @shuttle-gray;
+  background-color: @wild-sand;
+  border: 1px solid @sea-shell;
+}
+
+.bluebutton() {
+  background-color: #22283A;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 7%;
+}
+
+// .bluebutton(){
+//   background-color: #22283A;
+//   color: white;
+// }
+
 .layout(@justify, @align) {
   flex-direction: flex-start;
   justify-content: @justify;
