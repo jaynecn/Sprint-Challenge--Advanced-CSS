@@ -160,6 +160,15 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  padding: 1rem;
+}
+nav a {
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: black;
+  padding: 2rem;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -170,11 +179,31 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  background-color: #F6F6F6;
+  font: #454A59;
+  border: 1px solid #F1F1F1;
+}
+.home .intro h1 {
+  font-size: 4rem;
+}
 .home .intro h2 {
   padding: 15px;
 }
 .home .intro p {
   padding: 0 15px;
+}
+.home .space {
+  display: flex;
+  margin: 0rem 2rem;
+}
+.home .space img {
+  border-radius: 2.5%;
 }
 .home .space-images {
   display: flex;

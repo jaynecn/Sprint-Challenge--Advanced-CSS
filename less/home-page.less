@@ -3,6 +3,15 @@
 .home {
 
   .intro {
+    .column (center, center);
+    padding-top: 1rem;
+    background-color: @wild-sand;
+    font: @river-bend;
+    border: 1px solid @sea-shell;
+    color: @ebony-clay;
+    h1 {
+      font-size: 4rem;
+    }
 
     h2 {
       padding: 15px;
@@ -12,6 +21,16 @@
       padding:0 15px;
     }
   
+  }
+
+  #sky {
+    width: 80%;
+    .layout(@flex-start, center);
+    border-radius: 2%;
+  }
+
+  .lift-off {
+    padding: 15px;
   }
 
   .space-images {
@@ -58,6 +77,9 @@
       }
 
       .btn {
+        width: 25%;
+        color: green;
+        font-size: 2rem;
       }
     }
 
