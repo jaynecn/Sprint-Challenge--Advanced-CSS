@@ -34,13 +34,32 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website will have a generally fixed layout with breakpoints in design for different devices, this makes it similiar to a fully responsive site.  But an adaptive website will still have hard-coded pixels in the design in places such as the layout widths.
+
+A fully responsive website will also have media queries for different breakpoints.  There is usually a max-width for the body of the site to constrain the layout at a certain point.  Anything other than max-width is written as a percentage.  A fully responsive site gets rid of as much hard-coded pixel specifications as it can, and replace them with %, rem or em.  It takes longer to build.
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+With mobile first the main website and css file would be designed for a mobile phone format with added media queries for larger devices using min-width 
+
+With desktop first the website and css file would be designed for a desktop format, with added media queries at breakpoints for smaller devices such as tablet  and mobile phone.  
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+The default font size for most browsers is 16px.  What the font-size: 62.5% does is reduce the default font to 10px, making 1 rem = 10px.  This way, it is much easier to calculate other font sizes because you are now working on multiples of 10.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is a program that links to your css file.  Think of it as a translator.  A preprocessor takes a lot of the workload out of your job by making it easier to specify instructions to your css.  It also makes it a lot easier to navigate larger files, because a lot of repeated instructions are centralised.  Your work is de-cluttered, easier to read and easier to fix if something goes wrong. The preprocessor then takes the instructions you have specified and translates it all into css automatically.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favourite is variables, because you can update a variable once and it permeates throughout the whole document.
+
+The thing that gives me the most trouble is getting used to the syntax.  I have already had a couple of mistakes from typing colons and semi-colons where there shouldn’t be any.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
