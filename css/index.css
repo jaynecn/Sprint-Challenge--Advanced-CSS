@@ -253,7 +253,7 @@ footer {
 }
 .home .animate-img {
   animation-name: shadow-pop-tr;
-  animation-duration: 3s;
+  animation-duration: 2.5s;
   animation-direction: alternate;
   animation-iteration-count: 4;
 }
@@ -261,7 +261,7 @@ footer {
   animation-name: vibrate-1;
   animation-duration: 0.5s;
   animation-direction: alternate;
-  animation-iteration-count: 12;
+  animation-iteration-count: 20;
 }
 .home .visit-planets {
   padding: 1rem 3rem;
