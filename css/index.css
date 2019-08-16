@@ -251,6 +251,18 @@ footer {
     display: none;
   }
 }
+.home .animate-img {
+  animation-name: shadow-pop-tr;
+  animation-duration: 2.5s;
+  animation-direction: alternate;
+  animation-iteration-count: 4;
+}
+.home .animate-img.blast {
+  animation-name: vibrate-1;
+  animation-duration: 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count: 20;
+}
 .home .visit-planets {
   padding: 1rem 3rem;
 }
@@ -321,6 +333,8 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     width: 100%;
+    padding: 2rem;
+    border-radius: 5px;
   }
 }
 .home .walk .walk-img {
@@ -337,4 +351,42 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@keyframes shadow-pop-tr {
+  0% {
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+    -webkit-transform: translateX(-8px) translateY(8px);
+    transform: translateX(-8px) translateY(8px);
+  }
+}
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
 }

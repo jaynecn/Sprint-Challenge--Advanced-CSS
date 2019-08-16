@@ -70,14 +70,25 @@
       }
       .launch {
         display: none;
-      }
-
-
-        
+      }   
     }
+  }
+  
+  .animate-img {
+    animation-name: shadow-pop-tr;
+    animation-duration: 2.5s;
+    animation-direction: alternate;
+    animation-iteration-count: 4;
 
+    &.blast {
+      animation-name: vibrate-1;
+      animation-duration: .5s;
+      animation-direction: alternate;
+      animation-iteration-count: 20; 
+    }
   }
 
+  
   .visit-planets {
     padding: 1rem 3rem;
 
@@ -130,14 +141,6 @@
       p {
         margin-bottom: 26px;
       }    
-      // .btn{
-      //   transition-duration: 0.4s;
-      //   cursor: pointer;
-      //   &:hover{
-      //     color: @btn-bg-color;;
-      //     background-color:white;
-      //     }
-      // }
 
       .btn {
         display: flex;
@@ -146,15 +149,11 @@
         padding: .5rem 1rem;
         .bluebutton();
         .transition();
-        // transition-duration: 0.4s;
-        // cursor: pointer;
-        // &:hover{
-        //   color: @btn-bg-color;
-        //   background-color:white;
-        //   }
         
         @media @mobile{
           width: 100%;
+          padding: 2rem;
+          border-radius: 5px;
         }        
       }
     }
